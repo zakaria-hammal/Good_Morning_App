@@ -41,5 +41,5 @@ chmod +x install.sh
 
 - Notifications appear in **Plasma’s native notification tray**.  
 - You can control how they behave in:  
-  `System Settings → Notifications → Prayer Timer` (after first run).  
+  `System Settings → Notifications` (after first run).  
 - Make sure `plasmashell` is running (default in KDE sessions).  
