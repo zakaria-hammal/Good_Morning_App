@@ -1,0 +1,16 @@
+[Unit]
+Description=Good Morning App
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/goodmorning
+Environment=DISPLAY=:0
+Environment=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/%U/bus
+Environment=GM_APP_USER=%u
+ExecStartPre=/bin/sleep 120
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
